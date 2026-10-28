@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6ead7;
+  --foreground: #3f2a20;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, #fbe7c6 0%, transparent 40%),
+    radial-gradient(circle at top right, #e7f0e4 0%, transparent 35%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), "Noto Sans Devanagari", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
